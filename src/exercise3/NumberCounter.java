@@ -7,13 +7,13 @@ public class NumberCounter {
     public static void main(String[] args) {
         int positiveC=0;
         int negativeC=0;
-        int sum=0;
+        double sum=0;
+        double average;
 
         Scanner input=new Scanner(System.in);
-        System.out.println("Enter a number: ");
+
         int number = input.nextInt();
         sum+=number;
-        float sum1 = sum;
 
         do {
            if (number>0){
@@ -21,15 +21,17 @@ public class NumberCounter {
            }else{
                negativeC++;
            }
-           Scanner input1=new Scanner(System.in);
-           System.out.println("Enter a number: ");
+
            number = input.nextInt();
+           sum+=number;
 
         }while(number!=0);
+
+        average= sum /(positiveC+negativeC);
         System.out.println("Positive numbers: "+ positiveC);
         System.out.println("Negative numbers: " + negativeC);
-        System.out.println("Sum: " + sum1);
-        System.out.println("Average: "+ sum1/(positiveC+negativeC));
+        System.out.println("Sum: " + sum);
+        System.out.println("Average: "+ average );
 
     }
 }

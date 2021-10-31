@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class PrimeNumber {
     public static void main(String[] args) {
         Scanner input=new Scanner(System.in);
-        System.out.println("Enter a number: ");
+
         int number = input.nextInt();
         int divider = 2;
         boolean prime = true;
