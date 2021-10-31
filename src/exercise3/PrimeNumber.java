@@ -16,7 +16,8 @@ public class PrimeNumber {
                 prime = false;
                 break;
             }divider++;
-        }System.out.println("Prime Number: " +prime);
+
+        }System.out.println("Prime number: " +prime);
 
     }
 }
