@@ -29,6 +29,7 @@ public class Triangle {
                 }
             }else{
                 System.out.println("Values are not correct!");
+                break;
             }
 
         }while(a>0 && b>0 && c>0);
